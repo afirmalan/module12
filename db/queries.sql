@@ -1,5 +1,9 @@
 USE employee_db;
 
+select* from department;
+select* from role;
+
+
 
 SELECT employee.id, employee.first_name, employee.last_name, 
 role.title, department.name, role.salary, 
