@@ -18,6 +18,8 @@ const menuQuestion = [
     }
 
 ]
+
+
 const employeeAddQuestions = [
     {
         type: "input",
@@ -29,8 +31,47 @@ const employeeAddQuestions = [
         name: "last_name",
         message: "What is your last name?"
     },
-
+    {
+        type: "input",
+        name: "role_id",
+        message: "What is your role id?"
+    },
+    {
+        type: "input",
+        name: "manager_id",
+        message: "What is your manager id?"
+    }
 ]
+
+const departmentAddQuestions = [
+    {
+        type: "input",
+        name: "name",
+        message: "What is the department name?"
+    },
+   
+]
+
+const roleAddQuestions = [
+    {
+        type: "input",
+        name: "title",
+        message: "What is the title of the role?"
+    },
+    {
+        type: "input",
+        name: "salary",
+        message: "What is the salary of the role?"
+    },
+    {
+        type: "input",
+        name: "department_id",
+        message: "What is the department id of the role?"
+    },
+]
+
+
+
 
 function menu() {
     inquirer.createPromptModule(menuQuestion)
@@ -79,7 +120,7 @@ LEFT JOIN employee as mgr ON employee.id- mgr.manager_id
 }
 
 function viewRoles() {
-
+    
 }
 
 function viewDepartment() {
